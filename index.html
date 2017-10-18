@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API </title>
+  
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- bootsrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="jumbotron">
+  <h1 class="display-3" id="fruitfavorites">Add A Fruit</h1>
+  </div>
+  <div class="container">
+  <div class= "row">
+
+    <!-- fruit buttons will get here -->
+    <!-- how do I use bootstrap to change these buttons and the ones created-->
+    <div id="fruitbuttons" class = "col-md-6"></div>
+    <br>
+    <br>
+
+    <div id="fruit-input-box" class = "col-md-6">
+      <form id= "fruit-form">
+        <label for="fruit-input">Add a fruit</label>
+        <input type="text" id="fruit-input">
+        <br>
+        <br>
+        <!-- button triggers new fruit to be added -->
+        <button data-search="Fruit" id="add-fruit" type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+    <!-- Fruit Shows will get to show here-->
+    <div class ="row">
+    <div id="fruitview"></div>
+    </div>
+
+<script type="text/javascript" src="assets/giphy.js"></script>
+
+</body>
+</html>
